@@ -10,16 +10,16 @@ import AddLeads from './pages/AddLeads';
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-slate-900 flex">
+      <div className="min-h-screen bg-[#0a0f1a] flex">
         <Sidebar />
-        <main className="flex-1 overflow-y-auto p-6">
+        <main className="flex-1 overflow-y-auto">
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/leads" element={<Leads />} />
             <Route path="/leads/:id" element={<LeadDetail />} />
-            <Route path="/add-leads" element={<AddLeads />} />
-            <Route path="/revenue" element={<Revenue />} />
+            <Route path="/add" element={<AddLeads />} />
             <Route path="/outreach" element={<Outreach />} />
+            <Route path="/revenue" element={<Revenue />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>

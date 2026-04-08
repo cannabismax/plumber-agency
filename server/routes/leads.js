@@ -45,17 +45,21 @@ router.get("/:id", async (req, res) => {
 });
 
 router.post("/", async (req, res) => {
-  const { BusinessName, Website, Phone, Email, City, State, GoogleRating, Services } = req.body;
+  const { 
+    businessName, website, phone, email, city, state, 
+    services, status, googleRating 
+  } = req.body;
   
   const result = await executeDB("sp_InsertLead", {
-    BusinessName,
-    Website,
-    Phone,
-    Email,
-    City,
-    State,
-    GoogleRating,
-    Services
+    BusinessName: businessName,
+    Website: website,
+    Phone: phone,
+    Email: email,
+    City: city,
+    State: state,
+    GoogleRating: googleRating,
+    Services: services,
+    Status: status || "DISCOVERED"
   });
   
   if (result.success) {

@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 const API_BASE = 'http://localhost:3001/api';
 
 const PIPELINE_LINKS = [
-  { to: '/add-leads', label: 'Discover', icon: Search, countKey: null },
+  { to: '/add', label: 'Discover', icon: Search, countKey: null },
   { to: '/leads',     label: 'All Leads', icon: List,   countKey: 'total_leads' },
 ];
 

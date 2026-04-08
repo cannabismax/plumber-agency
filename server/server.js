@@ -8,6 +8,8 @@ import activitiesRouter from "./routes/activities.js";
 import callsRouter from "./routes/calls.js";
 import appointmentsRouter from "./routes/appointments.js";
 import dashboardRouter from "./routes/dashboard.js";
+import emailRouter from "./routes/email.js";
+import discoveryRouter from "./routes/discovery.js";
 
 dotenv.config();
 
@@ -71,6 +73,8 @@ app.use("/api/activities", activitiesRouter);
 app.use("/api/calls", callsRouter);
 app.use("/api/appointments", appointmentsRouter);
 app.use("/api/dashboard", dashboardRouter);
+app.use("/api/email", emailRouter);
+app.use("/api/discovery", discoveryRouter);
 
 app.get("/api/health", (req, res) => {
   res.json({ status: "ok", timestamp: new Date().toISOString() });

@@ -4,6 +4,7 @@ OUTREACH_MODE = {
     "MODE": "MANUAL",  # Options: "MANUAL" or "AUTO"
     "AUTO_ENABLED": False,  # Set True to enable automatic sending
     "MANUAL_INSTRUCTIONS": True,  # Always True - generates templates and instructions
+    "EMAIL_PROVIDER": "gmail",  # Options: "gmail", "sendgrid"
 }
 
 TARGET_CITIES = {

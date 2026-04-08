@@ -24,6 +24,8 @@ export default function Outreach() {
   const [copied, setCopied] = useState(false);
   const [mode, setMode] = useState("MANUAL");
   const [autoEnabled, setAutoEnabled] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [sendResult, setSendResult] = useState(null);
 
   useEffect(() => {
     fetchLeads();
@@ -77,6 +79,41 @@ To unsubscribe, reply STOP`
     await navigator.clipboard.writeText(text);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
+  }
+
+  async function sendEmail(lead) {
+    const email = generateEmailContent(lead);
+    setSending(true);
+    setSendResult(null);
+    
+    try {
+      const res = await fetch(`${API_BASE}/email/send`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          to: lead.Email || "contact@example.com",
+          subject: email.subject,
+          body: email.body,
+          leadId: lead.LeadID
+        })
+      });
+      
+      const data = await res.json();
+      setSendResult(data);
+      
+      if (data.success) {
+        await fetch(`${API_BASE}/leads/${lead.LeadID}/status`, {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ status: "CONTACTED" })
+        });
+        fetchLeads();
+      }
+    } catch (err) {
+      setSendResult({ success: false, error: err.message });
+    } finally {
+      setSending(false);
+    }
   }
 
   function downloadCSV() {
@@ -168,21 +205,19 @@ To unsubscribe, reply STOP`
       )}
 
       {mode === "AUTO" && (
-        <div className="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-4">
+        <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-4">
           <div className="flex items-start gap-3">
-            <AlertCircle className="text-yellow-400 mt-0.5" size={20} />
+            <Send className="text-green-400 mt-0.5" size={20} />
             <div>
-              <h3 className="font-medium text-yellow-400">Auto Mode Selected</h3>
+              <h3 className="font-medium text-green-400">Auto Mode Active (Gmail SMTP)</h3>
               <p className="text-sm text-slate-300 mt-1">
-                Auto mode requires API keys (SendGrid for email, Twilio for SMS).
-                Currently not configured. Switch to Manual mode to copy templates.
+                Emails will be sent via Gmail SMTP. Make sure SMTP_USER and SMTP_PASS are configured in server/.env
               </p>
-              <button
-                onClick={() => { setMode("MANUAL"); setAutoEnabled(false); }}
-                className="mt-2 text-sm text-blue-400 hover:underline"
-              >
-                Switch to Manual Mode
-              </button>
+              {sendResult && (
+                <div className={`mt-2 text-sm ${sendResult.success ? "text-green-400" : "text-red-400"}`}>
+                  {sendResult.success ? "Email sent successfully!" : `Error: ${sendResult.error}`}
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -275,15 +310,34 @@ To unsubscribe, reply STOP`
                 </div>
                 
                 <div className="pt-4 border-t border-slate-700">
-                  <h3 className="text-sm font-medium text-slate-300 mb-2">Manual Sending Instructions</h3>
-                  <ol className="text-sm text-slate-400 space-y-1 list-decimal list-inside">
-                    <li>Copy the email subject and body</li>
-                    <li>Open your email provider (Gmail, Outlook)</li>
-                    <li>Compose new email to the lead</li>
-                    <li>Replace [YOUR_DEMO_LINK] with actual demo URL</li>
-                    <li>Send the email</li>
-                    <li>Mark as contacted in the CRM</li>
-                  </ol>
+                  {mode === "MANUAL" ? (
+                    <>
+                      <h3 className="text-sm font-medium text-slate-300 mb-2">Manual Sending Instructions</h3>
+                      <ol className="text-sm text-slate-400 space-y-1 list-decimal list-inside">
+                        <li>Copy the email subject and body</li>
+                        <li>Open your email provider (Gmail, Outlook)</li>
+                        <li>Compose new email to the lead</li>
+                        <li>Replace [YOUR_DEMO_LINK] with actual demo URL</li>
+                        <li>Send the email</li>
+                        <li>Mark as contacted in the CRM</li>
+                      </ol>
+                    </>
+                  ) : (
+                    <>
+                      <h3 className="text-sm font-medium text-slate-300 mb-2">Auto Send</h3>
+                      <button
+                        onClick={() => sendEmail(selectedLead)}
+                        disabled={sending}
+                        className="w-full bg-green-600 hover:bg-green-500 disabled:bg-slate-600 text-white font-medium py-2 px-4 rounded-lg flex items-center justify-center gap-2"
+                      >
+                        <Send size={18} />
+                        {sending ? "Sending..." : "Send Email Now"}
+                      </button>
+                      {selectedLead.Email && (
+                        <p className="text-xs text-slate-500 mt-2">Sending to: {selectedLead.Email}</p>
+                      )}
+                    </>
+                  )}
                 </div>
               </div>
             </div>
