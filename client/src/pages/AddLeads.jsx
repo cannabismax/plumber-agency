@@ -85,6 +85,9 @@ export default function AddLeads() {
       if (res.ok) {
         const data = await res.json();
         setSearchResults(data.results || []);
+        if (data.message && (!data.results || data.results.length === 0)) {
+          showToast("error", data.message);
+        }
       } else {
         showToast("error", "Search failed");
       }

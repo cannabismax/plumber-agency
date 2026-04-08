@@ -1,7 +1,8 @@
 import { NavLink, useLocation } from 'react-router-dom';
 import {
   Search, List, Star, Mail, MessageSquare,
-  Handshake, CheckCircle, Send, DollarSign, LayoutDashboard, RefreshCw
+  HeartHandshake, CheckCircle, Send, DollarSign, LayoutDashboard, RefreshCw,
+  TrendingUp, X, Menu
 } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
@@ -16,7 +17,7 @@ const STAGE_LINKS = [
   { to: '/leads?status=PRIORITY',   label: 'Priority',   icon: Star,          countKey: 'priority_leads',   countColor: 'bg-yellow-500/20 text-yellow-400 border border-yellow-500/30' },
   { to: '/leads?status=CONTACTED',  label: 'Contacted',  icon: Mail,          countKey: 'contacted_leads',  countColor: 'bg-blue-500/20 text-blue-400' },
   { to: '/leads?status=RESPONDED',  label: 'Responded',  icon: MessageSquare, countKey: 'responded_leads',  countColor: 'bg-cyan-500/20 text-cyan-400' },
-  { to: '/leads?status=INTERESTED', label: 'Interested', icon: Handshake,     countKey: 'interested_leads', countColor: 'bg-purple-500/20 text-purple-400' },
+  { to: '/leads?status=INTERESTED', label: 'Interested', icon: HeartHandshake,     countKey: 'interested_leads', countColor: 'bg-purple-500/20 text-purple-400' },
   { to: '/leads?status=CLOSED',     label: 'Closed',     icon: CheckCircle,   countKey: 'closed_leads',     countColor: 'bg-green-500/20 text-green-400 border border-green-500/30' },
 ];
 

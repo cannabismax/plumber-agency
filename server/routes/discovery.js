@@ -6,6 +6,7 @@ dotenv.config();
 const router = express.Router();
 
 const SEARCH_API_KEY = process.env.EXA_API_KEY;
+const SERPAPI_KEY = process.env.SERPAPI_KEY;
 
 router.post("/search", async (req, res) => {
   const { query, city, state } = req.body;
@@ -14,15 +15,11 @@ router.post("/search", async (req, res) => {
     return res.status(400).json({ error: "Query is required" });
   }
 
-  const location = city && state 
-    ? `${city} ${state}`
-    : city 
-      ? city 
-      : "";
+  const location = city && state ? `${city}, ${state}` : city || "";
 
-  const fullQuery = location 
-    ? `plumbing companies ${location} ${query}`
-    : `plumbing services ${query}`;
+  const searchQuery = location 
+    ? `plumbing ${query} in ${location}`
+    : `plumbing ${query}`;
 
   try {
     if (SEARCH_API_KEY) {
@@ -33,7 +30,7 @@ router.post("/search", async (req, res) => {
           "Authorization": `Bearer ${SEARCH_API_KEY}`
         },
         body: JSON.stringify({
-          query: fullQuery,
+          query: searchQuery,
           numResults: 20,
           type: "keyword",
           category: "company_homepages"
@@ -53,33 +50,26 @@ router.post("/search", async (req, res) => {
       }
     }
 
-    const encodedQuery = encodeURIComponent(fullQuery);
-    const searchUrl = `https://api.duckduckgo.com/?q=${encodedQuery}&format=json&no_html=1`;
-
-    const response = await fetch(searchUrl);
-    const data = await response.json();
-
-    const results = [];
-    const seenUrls = new Set();
-
-    if (data.RelatedTopics) {
-      for (const topic of data.RelatedTopics) {
-        if (topic.Text && topic.FirstURL && !seenUrls.has(topic.FirstURL)) {
-          seenUrls.add(topic.FirstURL);
-          const title = topic.Text.split(/[-.]/)[0].trim() || topic.FirstURL;
-          results.push({
-            name: title.substring(0, 80),
-            url: topic.FirstURL,
-            snippet: topic.Text.substring(0, 150),
-            city: city,
-            state: state
-          });
-        }
-        if (results.length >= 20) break;
+    if (SERPAPI_KEY) {
+      const response = await fetch(`https://serpapi.com/search.json?q=${encodeURIComponent(searchQuery)}&api_key=${SERPAPI_KEY}`);
+      const data = await response.json();
+      
+      if (data.organic_results) {
+        const results = data.organic_results.slice(0, 20).map(r => ({
+          name: r.title,
+          url: r.link,
+          snippet: r.snippet || "",
+          city: city,
+          state: state
+        }));
+        return res.json({ results });
       }
     }
 
-    res.json({ results });
+    res.json({ 
+      results: [],
+      message: "Web search requires EXA_API_KEY or SERPAPI_KEY. Add one to .env to enable discovery."
+    });
   } catch (error) {
     console.error("Search error:", error);
     res.status(500).json({ error: error.message, results: [] });
