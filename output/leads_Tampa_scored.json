@@ -1,0 +1,248 @@
+[
+  {
+    "business_name": "Roto-Rooter Tampa",
+    "website": "https://www.rotorooter.com/tampa/",
+    "phone": "(813) 980-6000",
+    "address": "Tampa, FL",
+    "services": "24/7 Emergency Plumbing",
+    "city": "Tampa",
+    "state": "FL",
+    "lead_score": 30,
+    "score_breakdown": {
+      "no_click_to_call": 0,
+      "no_sticky_cta": 0,
+      "weak_headline": 20,
+      "poor_mobile": 10
+    },
+    "issues": [
+      "Weak or missing headline",
+      "Poor mobile optimization"
+    ],
+    "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": true, \"has_weak_headline\": false, \"has_poor_mobile\": false, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 0, \"weak_headline\": 20, \"poor_mobile\": 10}, \"issues\": [\"Weak or missing headline\", \"Poor mobile optimization\"]}",
+    "has_click_to_call": true,
+    "has_sticky_cta": true,
+    "has_weak_headline": false,
+    "has_poor_mobile": false
+  },
+  {
+    "business_name": "Benjamin Franklin Plumbing Tampa",
+    "website": "https://www.benjaminfranklinplumbing.com/tampa/",
+    "phone": null,
+    "address": "Tampa, FL",
+    "services": "Emergency Plumbing, Voted Best (Forbes)",
+    "city": "Tampa",
+    "state": "FL",
+    "lead_score": 30,
+    "score_breakdown": {
+      "no_click_to_call": 0,
+      "no_sticky_cta": 0,
+      "weak_headline": 20,
+      "poor_mobile": 10
+    },
+    "issues": [
+      "Weak or missing headline",
+      "Poor mobile optimization"
+    ],
+    "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": true, \"has_weak_headline\": false, \"has_poor_mobile\": false, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 0, \"weak_headline\": 20, \"poor_mobile\": 10}, \"issues\": [\"Weak or missing headline\", \"Poor mobile optimization\"]}",
+    "has_click_to_call": true,
+    "has_sticky_cta": true,
+    "has_weak_headline": false,
+    "has_poor_mobile": false
+  },
+  {
+    "business_name": "Tampa Emergency Plumbing",
+    "website": "https://emergencyplumbertampa.com/",
+    "phone": "(813) 489-6968",
+    "address": "Tampa, FL",
+    "services": "24 Hour Plumbers, Reliable",
+    "city": "Tampa",
+    "state": "FL",
+    "lead_score": 55,
+    "score_breakdown": {
+      "no_click_to_call": 30,
+      "no_sticky_cta": 25,
+      "weak_headline": 0,
+      "poor_mobile": 0
+    },
+    "issues": [
+      "Missing click-to-call button",
+      "No sticky call-to-action"
+    ],
+    "analysis_data": "{\"has_click_to_call\": false, \"has_sticky_cta\": false, \"has_weak_headline\": true, \"has_poor_mobile\": true, \"score_breakdown\": {\"no_click_to_call\": 30, \"no_sticky_cta\": 25, \"weak_headline\": 0, \"poor_mobile\": 0}, \"issues\": [\"Missing click-to-call button\", \"No sticky call-to-action\"]}",
+    "has_click_to_call": false,
+    "has_sticky_cta": false,
+    "has_weak_headline": true,
+    "has_poor_mobile": true
+  },
+  {
+    "business_name": "All Hours Plumber Tampa",
+    "website": "https://allhoursplumber.com/",
+    "phone": null,
+    "address": "Tampa, FL",
+    "services": "24/7 Emergency, Tampa Bay Area",
+    "city": "Tampa",
+    "state": "FL",
+    "lead_score": 75,
+    "score_breakdown": {
+      "no_click_to_call": 30,
+      "no_sticky_cta": 25,
+      "weak_headline": 20,
+      "poor_mobile": 0
+    },
+    "issues": [
+      "Missing click-to-call button",
+      "No sticky call-to-action",
+      "Weak or missing headline"
+    ],
+    "analysis_data": "{\"has_click_to_call\": false, \"has_sticky_cta\": false, \"has_weak_headline\": false, \"has_poor_mobile\": true, \"score_breakdown\": {\"no_click_to_call\": 30, \"no_sticky_cta\": 25, \"weak_headline\": 20, \"poor_mobile\": 0}, \"issues\": [\"Missing click-to-call button\", \"No sticky call-to-action\", \"Weak or missing headline\"]}",
+    "has_click_to_call": false,
+    "has_sticky_cta": false,
+    "has_weak_headline": false,
+    "has_poor_mobile": true
+  },
+  {
+    "business_name": "Everyday Plumber",
+    "website": "https://everydayplumber.com/",
+    "phone": null,
+    "address": "Tampa, FL",
+    "services": "Emergency, Residential, Commercial",
+    "city": "Tampa",
+    "state": "FL",
+    "lead_score": 55,
+    "score_breakdown": {
+      "no_click_to_call": 30,
+      "no_sticky_cta": 25,
+      "weak_headline": 0,
+      "poor_mobile": 0
+    },
+    "issues": [
+      "Missing click-to-call button",
+      "No sticky call-to-action"
+    ],
+    "analysis_data": "{\"has_click_to_call\": false, \"has_sticky_cta\": false, \"has_weak_headline\": true, \"has_poor_mobile\": true, \"score_breakdown\": {\"no_click_to_call\": 30, \"no_sticky_cta\": 25, \"weak_headline\": 0, \"poor_mobile\": 0}, \"issues\": [\"Missing click-to-call button\", \"No sticky call-to-action\"]}",
+    "has_click_to_call": false,
+    "has_sticky_cta": false,
+    "has_weak_headline": true,
+    "has_poor_mobile": true
+  },
+  {
+    "business_name": "1 Tom Plumber Tampa",
+    "website": "https://www.1tomplumber.com/tampa-fl/",
+    "phone": null,
+    "address": "Tampa, FL",
+    "services": "24 Hour Emergency, Every Day/Night",
+    "city": "Tampa",
+    "state": "FL",
+    "lead_score": 30,
+    "score_breakdown": {
+      "no_click_to_call": 0,
+      "no_sticky_cta": 0,
+      "weak_headline": 20,
+      "poor_mobile": 10
+    },
+    "issues": [
+      "Weak or missing headline",
+      "Poor mobile optimization"
+    ],
+    "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": true, \"has_weak_headline\": false, \"has_poor_mobile\": false, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 0, \"weak_headline\": 20, \"poor_mobile\": 10}, \"issues\": [\"Weak or missing headline\", \"Poor mobile optimization\"]}",
+    "has_click_to_call": true,
+    "has_sticky_cta": true,
+    "has_weak_headline": false,
+    "has_poor_mobile": false
+  },
+  {
+    "business_name": "Grable Plumbing & Air",
+    "website": "https://grableplumbing.com/",
+    "phone": "(813) 239-3636",
+    "address": "Tampa, FL",
+    "services": "Emergency 24hr, Free Estimate",
+    "city": "Tampa",
+    "state": "FL",
+    "lead_score": 30,
+    "score_breakdown": {
+      "no_click_to_call": 0,
+      "no_sticky_cta": 0,
+      "weak_headline": 20,
+      "poor_mobile": 10
+    },
+    "issues": [
+      "Weak or missing headline",
+      "Poor mobile optimization"
+    ],
+    "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": true, \"has_weak_headline\": false, \"has_poor_mobile\": false, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 0, \"weak_headline\": 20, \"poor_mobile\": 10}, \"issues\": [\"Weak or missing headline\", \"Poor mobile optimization\"]}",
+    "has_click_to_call": true,
+    "has_sticky_cta": true,
+    "has_weak_headline": false,
+    "has_poor_mobile": false
+  },
+  {
+    "business_name": "ABC Plumbing Tampa Bay",
+    "website": "https://www.4abc.com/",
+    "phone": "(813) 452-5952",
+    "address": "Tampa Bay, FL",
+    "services": "Emergency Plumbing Services",
+    "city": "Tampa",
+    "state": "FL",
+    "lead_score": 75,
+    "score_breakdown": {
+      "no_click_to_call": 30,
+      "no_sticky_cta": 25,
+      "weak_headline": 20,
+      "poor_mobile": 0
+    },
+    "issues": [
+      "Missing click-to-call button",
+      "No sticky call-to-action",
+      "Weak or missing headline"
+    ],
+    "analysis_data": "{\"has_click_to_call\": false, \"has_sticky_cta\": false, \"has_weak_headline\": false, \"has_poor_mobile\": true, \"score_breakdown\": {\"no_click_to_call\": 30, \"no_sticky_cta\": 25, \"weak_headline\": 20, \"poor_mobile\": 0}, \"issues\": [\"Missing click-to-call button\", \"No sticky call-to-action\", \"Weak or missing headline\"]}",
+    "has_click_to_call": false,
+    "has_sticky_cta": false,
+    "has_weak_headline": false,
+    "has_poor_mobile": true
+  },
+  {
+    "business_name": "Stewart Bros Plumbing",
+    "website": "https://stewartbrosplumbing.com/",
+    "phone": "(813) 602-0700",
+    "address": "Tampa, FL",
+    "services": "24/7 Plumbing",
+    "city": "Tampa",
+    "state": "FL",
+    "lead_score": 0,
+    "score_breakdown": {},
+    "issues": [
+      "Analysis error: [Errno 11001] getaddrinfo failed"
+    ],
+    "analysis_data": "{\"has_click_to_call\": false, \"has_sticky_cta\": false, \"has_weak_headline\": true, \"has_poor_mobile\": true, \"score_breakdown\": {}, \"issues\": [\"Analysis error: [Errno 11001] getaddrinfo failed\"]}",
+    "has_click_to_call": false,
+    "has_sticky_cta": false,
+    "has_weak_headline": true,
+    "has_poor_mobile": true
+  },
+  {
+    "business_name": "Dr. Pipes Tampa",
+    "website": "https://www.drpipes.com/fl/hillsborough/tampa.html",
+    "phone": null,
+    "address": "Tampa, FL",
+    "services": "24/7 Emergency Plumbers",
+    "city": "Tampa",
+    "state": "FL",
+    "lead_score": 55,
+    "score_breakdown": {
+      "no_click_to_call": 30,
+      "no_sticky_cta": 25,
+      "weak_headline": 0,
+      "poor_mobile": 0
+    },
+    "issues": [
+      "Missing click-to-call button",
+      "No sticky call-to-action"
+    ],
+    "analysis_data": "{\"has_click_to_call\": false, \"has_sticky_cta\": false, \"has_weak_headline\": true, \"has_poor_mobile\": true, \"score_breakdown\": {\"no_click_to_call\": 30, \"no_sticky_cta\": 25, \"weak_headline\": 0, \"poor_mobile\": 0}, \"issues\": [\"Missing click-to-call button\", \"No sticky call-to-action\"]}",
+    "has_click_to_call": false,
+    "has_sticky_cta": false,
+    "has_weak_headline": true,
+    "has_poor_mobile": true
+  }
+]

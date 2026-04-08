@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-04-07",
+  "total_leads": 62,
+  "priority_leads": 50,
+  "outreach": {
+    "emails_generated": 50,
+    "sms_generated": 10,
+    "limits_applied": {
+      "max_emails_per_city": 15,
+      "max_sms_total": 30
+    }
+  },
+  "instructions": {
+    "email": "Copy the generated email templates from output/outreach/emails_[CITY].json and send manually via your email provider (Gmail, Outlook, etc.)",
+    "sms": "Copy SMS templates and send via your SMS provider (Twilio, etc.)"
+  },
+  "sample_email": {
+    "subject": "Quick fix for your website - more emergency calls",
+    "body": "Hi [First Name],\n\nI noticed your site at [WEBSITE] could be losing emergency plumbing calls.\n\nI rebuilt your homepage to show exactly what I mean:\n[DEMO LINK]\n\nHere's what I fixed:\n- Added a sticky 'Call Now' button\n- Made your phone number prominent on every page\n- Created a sense of urgency for emergency services\n\nWould you like me to walk you through the changes? It's completely free to look at.\n\nBest,\nAlex"
+  },
+  "sample_sms": "Quick fix for your website—this could bring more emergency calls: [LINK]"
+}

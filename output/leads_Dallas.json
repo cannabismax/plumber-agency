@@ -1,0 +1,128 @@
+[
+  {
+    "business_name": "Baker Brothers Plumbing",
+    "website": "https://bakerbrothersplumbing.com/",
+    "phone": "(214) 296-2136",
+    "address": "Dallas, TX",
+    "services": "Emergency Plumbing, 24 Hour",
+    "city": "Dallas",
+    "state": "TX"
+  },
+  {
+    "business_name": "Emergency Plumbing on Call",
+    "website": "https://emergencyplumbingoncall.com/",
+    "phone": "(972) 597-5959",
+    "address": "Dallas, TX",
+    "services": "24/7 Emergency, 20+ Years Experience",
+    "city": "Dallas",
+    "state": "TX"
+  },
+  {
+    "business_name": "Lee's Air Plumbing",
+    "website": "https://leesair.com/",
+    "phone": null,
+    "address": "Dallas, TX",
+    "services": "Emergency Plumbing, HVAC",
+    "city": "Dallas",
+    "state": "TX"
+  },
+  {
+    "business_name": "Pure Plumbing DFW",
+    "website": "https://www.pureplumbingdfw.com/",
+    "phone": null,
+    "address": "Dallas, TX",
+    "services": "24/7 Emergency Plumbing",
+    "city": "Dallas",
+    "state": "TX"
+  },
+  {
+    "business_name": "448 Plumbing",
+    "website": "https://www.448plumbing.com/",
+    "phone": null,
+    "address": "Dallas, TX",
+    "services": "Emergency Plumbing, Licensed",
+    "city": "Dallas",
+    "state": "TX"
+  },
+  {
+    "business_name": "Reliant Plumbing",
+    "website": "https://reliantplumbing.com/",
+    "phone": null,
+    "address": "Dallas, TX",
+    "services": "24 Hour Emergency Plumbing",
+    "city": "Dallas",
+    "state": "TX"
+  },
+  {
+    "business_name": "Astar Air Conditioning",
+    "website": "https://astardfw.com/",
+    "phone": null,
+    "address": "Dallas-Fort Worth, TX",
+    "services": "Emergency Plumbing, Fast Response",
+    "city": "Dallas",
+    "state": "TX"
+  },
+  {
+    "business_name": "Jerry's Plumbing Heating",
+    "website": "https://jerrysplumbingheating.com/",
+    "phone": null,
+    "address": "Dallas, TX",
+    "services": "Emergency Plumbing, Rapid Response",
+    "city": "Dallas",
+    "state": "TX"
+  },
+  {
+    "business_name": "Dallas Plumbing & AC",
+    "website": "https://dallasplumbing.com/",
+    "phone": "(469) 213-2459",
+    "address": "Dallas, TX",
+    "services": "Emergency Plumber, Since 1903",
+    "city": "Dallas",
+    "state": "TX"
+  },
+  {
+    "business_name": "1-800-Plumber Dallas",
+    "website": "https://1800plumber.com/dallas-tx/",
+    "phone": "(214) 935-8547",
+    "address": "Dallas, TX",
+    "services": "24/7 Emergency Plumbing",
+    "city": "Dallas",
+    "state": "TX"
+  },
+  {
+    "business_name": "Glens Plumbing",
+    "website": "http://glensplumbing.com/",
+    "phone": "(214) 429-4634",
+    "address": "Dallas, TX",
+    "services": "Drain Cleaning, Sewer Repair, 4.9 Stars",
+    "city": "Dallas",
+    "state": "TX"
+  },
+  {
+    "business_name": "Texas Rooter",
+    "website": "https://www.texasrooter.com/",
+    "phone": null,
+    "address": "Dallas, TX",
+    "services": "Plumbing, Drain Cleaning, 24-Hour",
+    "city": "Dallas",
+    "state": "TX"
+  },
+  {
+    "business_name": "All Masters Plumbing",
+    "website": "https://allmastersplumbing.com/",
+    "phone": null,
+    "address": "Dallas-Fort Worth, TX",
+    "services": "24-Hour Emergency, Same-Day",
+    "city": "Dallas",
+    "state": "TX"
+  },
+  {
+    "business_name": "Garza's Plumbing",
+    "website": "https://garzasplumbing.com/",
+    "phone": null,
+    "address": "Dallas, TX",
+    "services": "24/7 Emergency, Licensed Experts",
+    "city": "Dallas",
+    "state": "TX"
+  }
+]

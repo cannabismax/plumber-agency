@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Outreach Instructions - Plumbing Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-white min-h-screen">
+    <header class="bg-slate-800 border-b border-slate-700 px-6 py-4">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-400">Manual Outreach Instructions</h1>
+            <a href="/dashboard/global/index.html" class="text-slate-400 hover:text-white">Back to Dashboard</a>
+        </div>
+    </header>
+    
+    <main class="max-w-4xl mx-auto p-8 space-y-8">
+        
+        <!-- Overview -->
+        <div class="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6">
+            <h2 class="text-xl font-bold text-blue-400 mb-2">Current Mode: MANUAL</h2>
+            <p class="text-slate-300">
+                All outreach templates are generated and ready to copy. This page provides step-by-step instructions 
+                for manually sending emails and SMS to your leads.
+            </p>
+        </div>
+
+        <!-- Email Instructions -->
+        <div class="bg-slate-800 rounded-xl overflow-hidden">
+            <div class="p-6 border-b border-slate-700">
+                <h2 class="text-xl font-bold flex items-center gap-3">
+                    <span class="bg-blue-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">1</span>
+                    Email Outreach
+                </h2>
+            </div>
+            <div class="p-6 space-y-4">
+                <h3 class="font-semibold text-lg">Step-by-Step Instructions:</h3>
+                <ol class="space-y-3 list-decimal list-inside text-slate-300">
+                    <li><strong>Go to the Outreach page</strong> in the CRM Control Panel (http://localhost:3000/outreach)</li>
+                    <li><strong>Click on any lead</strong> to see their personalized email template</li>
+                    <li><strong>Click the Copy button</strong> next to the email subject and body</li>
+                    <li><strong>Open your email provider</strong> (Gmail, Outlook, etc.)</li>
+                    <li><strong>Create a new email</strong> and paste the subject and body</li>
+                    <li><strong>Replace [YOUR_DEMO_LINK]</strong> with the actual demo site URL</li>
+                    <li><strong>Send the email</strong> to the lead</li>
+                    <li><strong>Return to the CRM</strong> and mark the lead as "Contacted"</li>
+                </ol>
+                
+                <div class="bg-slate-700 rounded-lg p-4 mt-4">
+                    <h4 class="font-medium text-yellow-400 mb-2">Tips:</h4>
+                    <ul class="text-sm text-slate-300 space-y-1">
+                        <li>- Send emails in batches of 10-15 per day to avoid spam filters</li>
+                        <li>- Personalize the opening line with the lead's first name</li>
+                        <li>- Always include the demo link - it's the visual proof of your work</li>
+                        <li>- Follow up after 3 days if no response</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SMS Instructions -->
+        <div class="bg-slate-800 rounded-xl overflow-hidden">
+            <div class="p-6 border-b border-slate-700">
+                <h2 class="text-xl font-bold flex items-center gap-3">
+                    <span class="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">2</span>
+                    SMS Outreach
+                </h2>
+            </div>
+            <div class="p-6 space-y-4">
+                <h3 class="font-semibold text-lg">Step-by-Step Instructions:</h3>
+                <ol class="space-y-3 list-decimal list-inside text-slate-300">
+                    <li><strong>Find leads with phone numbers</strong> in the Outreach page</li>
+                    <li><strong>Click on a lead</strong> to see their SMS template</li>
+                    <li><strong>Copy the SMS message</strong> (already formatted under 160 characters)</li>
+                    <li><strong>Open your SMS provider</strong> (Google Voice, Twilio, etc.)</li>
+                    <li><strong>Send the SMS</strong> to the lead's phone number</li>
+                    <li><strong>Replace [YOUR_DEMO_LINK]</strong> with the actual demo URL</li>
+                </ol>
+                
+                <div class="bg-slate-700 rounded-lg p-4 mt-4">
+                    <h4 class="font-medium text-yellow-400 mb-2">SMS Character Limit:</h4>
+                    <p class="text-sm text-slate-300">
+                        SMS messages are capped at 160 characters. Messages over this limit will be split or truncated.
+                        The templates are pre-formatted to fit within this limit.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CSV Bulk Export -->
+        <div class="bg-slate-800 rounded-xl overflow-hidden">
+            <div class="p-6 border-b border-slate-700">
+                <h2 class="text-xl font-bold flex items-center gap-3">
+                    <span class="bg-purple-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">3</span>
+                    Bulk Export (CSV)
+                </h2>
+            </div>
+            <div class="p-6 space-y-4">
+                <p class="text-slate-300">
+                    Export all leads with their email templates to a CSV file for bulk importing into your email platform.
+                </p>
+                <ol class="space-y-3 list-decimal list-inside text-slate-300">
+                    <li><strong>Click "Export CSV"</strong> button in the Outreach page</li>
+                    <li><strong>Open the CSV</strong> in Excel or Google Sheets</li>
+                    <li><strong>Review and edit</strong> any personalization fields</li>
+                    <li><strong>Import into Mailchimp, SendGrid, or your email platform</li>
+                    <li><strong>Send using the platform's bulk send feature</strong></li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Auto Mode Setup -->
+        <div class="bg-slate-800 rounded-xl overflow-hidden">
+            <div class="p-6 border-b border-slate-700">
+                <h2 class="text-xl font-bold flex items-center gap-3">
+                    <span class="bg-yellow-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">!</span>
+                    Enabling Auto Mode
+                </h2>
+            </div>
+            <div class="p-6 space-y-4">
+                <p class="text-slate-300">
+                    Auto mode is currently disabled. To enable automatic sending:
+                </p>
+                <ol class="space-y-3 list-decimal list-inside text-slate-300">
+                    <li><strong>Set up API keys</strong> in the <code class="bg-slate-700 px-2 py-1 rounded">server/.env</code> file:</li>
+                </ol>
+                <div class="bg-slate-700 rounded-lg p-4 font-mono text-sm">
+                    <p># Email (SendGrid)</p>
+                    <p>SENDGRID_API_KEY=your_sendgrid_key</p>
+                    <br/>
+                    <p># SMS (Twilio)</p>
+                    <p>TWILIO_ACCOUNT_SID=your_twilio_sid</p>
+                    <p>TWILIO_AUTH_TOKEN=your_twilio_token</p>
+                    <p>TWILIO_PHONE_NUMBER=+1234567890</p>
+                </div>
+                <ol class="space-y-3 list-decimal list-inside text-slate-300 mt-4" start="4">
+                    <li><strong>Update config/settings.py</strong> - Set <code class="bg-slate-700 px-2 py-1 rounded">AUTO_ENABLED = True</code></li>
+                    <li><strong>Restart the server</strong></li>
+                    <li><strong>Toggle Auto Mode</strong> in the Outreach page</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Compliance -->
+        <div class="bg-red-500/10 border border-red-500/30 rounded-xl p-6">
+            <h2 class="text-lg font-bold text-red-400 mb-2">Important Compliance Notes</h2>
+            <ul class="text-sm text-slate-300 space-y-2">
+                <li>- Always include an unsubscribe option in emails</li>
+                <li>- Respect CAN-SPAM and GDPR regulations</li>
+                <li>- Only contact leads during reasonable hours (8am - 8pm local time)</li>
+                <li>- Keep records of all communications</li>
+                <li>- Honor unsubscribe requests immediately</li>
+            </ul>
+        </div>
+
+        <!-- Resources -->
+        <div class="bg-slate-800 rounded-xl p-6">
+            <h2 class="text-lg font-bold mb-4">Additional Resources</h2>
+            <div class="grid md:grid-cols-3 gap-4">
+                <a href="/outreach_assets/index.html" class="bg-slate-700 hover:bg-slate-600 rounded-lg p-4 text-center">
+                    <div class="text-blue-400 font-medium">Before/After Analysis</div>
+                    <div class="text-sm text-slate-400">View lead analysis</div>
+                </a>
+                <a href="/demo_sites/Tucson/" class="bg-slate-700 hover:bg-slate-600 rounded-lg p-4 text-center">
+                    <div class="text-green-400 font-medium">Demo Sites</div>
+                    <div class="text-sm text-slate-400">View sample landing pages</div>
+                </a>
+                <a href="/output/outreach/all_leads.csv" class="bg-slate-700 hover:bg-slate-600 rounded-lg p-4 text-center">
+                    <div class="text-purple-400 font-medium">Export CSV</div>
+                    <div class="text-sm text-slate-400">Download all leads</div>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,392 @@
+{
+  "priority": [
+    {
+      "business_name": "Phoenix Plumbing",
+      "website": "https://phoenixplumbing.co/",
+      "phone": "(602) 834-1208",
+      "address": "Phoenix, AZ",
+      "services": "Emergency Plumbing, 60-Min Response",
+      "city": "Phoenix",
+      "state": "AZ",
+      "lead_score": 75,
+      "score_breakdown": {
+        "no_click_to_call": 30,
+        "no_sticky_cta": 25,
+        "weak_headline": 20,
+        "poor_mobile": 0
+      },
+      "issues": [
+        "Missing click-to-call button",
+        "No sticky call-to-action",
+        "Weak or missing headline"
+      ],
+      "analysis_data": "{\"has_click_to_call\": false, \"has_sticky_cta\": false, \"has_weak_headline\": false, \"has_poor_mobile\": true, \"score_breakdown\": {\"no_click_to_call\": 30, \"no_sticky_cta\": 25, \"weak_headline\": 20, \"poor_mobile\": 0}, \"issues\": [\"Missing click-to-call button\", \"No sticky call-to-action\", \"Weak or missing headline\"]}",
+      "has_click_to_call": false,
+      "has_sticky_cta": false,
+      "has_weak_headline": false,
+      "has_poor_mobile": true,
+      "status": "PRIORITY",
+      "demo_site_path": "E:\\playground\\Plumber\\demo_sites\\Phoenix\\Phoenix_Plumbing.html",
+      "demo_site_url": "file://E:\\playground\\Plumber\\demo_sites\\Phoenix\\Phoenix_Plumbing.html"
+    },
+    {
+      "business_name": "The Aussie Plumber",
+      "website": "https://theaussieplumber.com/",
+      "phone": null,
+      "address": "Phoenix, AZ",
+      "services": "Plumbing, Repairs, Replacements",
+      "city": "Phoenix",
+      "state": "AZ",
+      "lead_score": 75,
+      "score_breakdown": {
+        "no_click_to_call": 30,
+        "no_sticky_cta": 25,
+        "weak_headline": 20,
+        "poor_mobile": 0
+      },
+      "issues": [
+        "Missing click-to-call button",
+        "No sticky call-to-action",
+        "Weak or missing headline"
+      ],
+      "analysis_data": "{\"has_click_to_call\": false, \"has_sticky_cta\": false, \"has_weak_headline\": false, \"has_poor_mobile\": true, \"score_breakdown\": {\"no_click_to_call\": 30, \"no_sticky_cta\": 25, \"weak_headline\": 20, \"poor_mobile\": 0}, \"issues\": [\"Missing click-to-call button\", \"No sticky call-to-action\", \"Weak or missing headline\"]}",
+      "has_click_to_call": false,
+      "has_sticky_cta": false,
+      "has_weak_headline": false,
+      "has_poor_mobile": true,
+      "status": "PRIORITY",
+      "demo_site_path": "E:\\playground\\Plumber\\demo_sites\\Phoenix\\The_Aussie_Plumber.html",
+      "demo_site_url": "file://E:\\playground\\Plumber\\demo_sites\\Phoenix\\The_Aussie_Plumber.html"
+    },
+    {
+      "business_name": "Rock Plumbing AZ",
+      "website": "https://rockplumbingaz.com/",
+      "phone": null,
+      "address": "Phoenix, AZ",
+      "services": "Emergency Plumbing, 24/7",
+      "city": "Phoenix",
+      "state": "AZ",
+      "lead_score": 75,
+      "score_breakdown": {
+        "no_click_to_call": 30,
+        "no_sticky_cta": 25,
+        "weak_headline": 20,
+        "poor_mobile": 0
+      },
+      "issues": [
+        "Missing click-to-call button",
+        "No sticky call-to-action",
+        "Weak or missing headline"
+      ],
+      "analysis_data": "{\"has_click_to_call\": false, \"has_sticky_cta\": false, \"has_weak_headline\": false, \"has_poor_mobile\": true, \"score_breakdown\": {\"no_click_to_call\": 30, \"no_sticky_cta\": 25, \"weak_headline\": 20, \"poor_mobile\": 0}, \"issues\": [\"Missing click-to-call button\", \"No sticky call-to-action\", \"Weak or missing headline\"]}",
+      "has_click_to_call": false,
+      "has_sticky_cta": false,
+      "has_weak_headline": false,
+      "has_poor_mobile": true,
+      "status": "PRIORITY",
+      "demo_site_path": "E:\\playground\\Plumber\\demo_sites\\Phoenix\\Rock_Plumbing_AZ.html",
+      "demo_site_url": "file://E:\\playground\\Plumber\\demo_sites\\Phoenix\\Rock_Plumbing_AZ.html"
+    },
+    {
+      "business_name": "Dr. Pipes Phoenix",
+      "website": "https://www.drpipes.com/az/maricopa/phoenix.html",
+      "phone": null,
+      "address": "Phoenix, AZ",
+      "services": "24/7 Emergency Plumbing",
+      "city": "Phoenix",
+      "state": "AZ",
+      "lead_score": 55,
+      "score_breakdown": {
+        "no_click_to_call": 30,
+        "no_sticky_cta": 25,
+        "weak_headline": 0,
+        "poor_mobile": 0
+      },
+      "issues": [
+        "Missing click-to-call button",
+        "No sticky call-to-action"
+      ],
+      "analysis_data": "{\"has_click_to_call\": false, \"has_sticky_cta\": false, \"has_weak_headline\": true, \"has_poor_mobile\": true, \"score_breakdown\": {\"no_click_to_call\": 30, \"no_sticky_cta\": 25, \"weak_headline\": 0, \"poor_mobile\": 0}, \"issues\": [\"Missing click-to-call button\", \"No sticky call-to-action\"]}",
+      "has_click_to_call": false,
+      "has_sticky_cta": false,
+      "has_weak_headline": true,
+      "has_poor_mobile": true,
+      "status": "PRIORITY",
+      "demo_site_path": "E:\\playground\\Plumber\\demo_sites\\Phoenix\\Dr_Pipes_Phoenix.html",
+      "demo_site_url": "file://E:\\playground\\Plumber\\demo_sites\\Phoenix\\Dr_Pipes_Phoenix.html"
+    },
+    {
+      "business_name": "Okane Plumbing",
+      "website": "https://phoenix-az.okaneplumbingandelectrics.com/",
+      "phone": "(833) 876-1141",
+      "address": "Phoenix, AZ 85044",
+      "services": "24 Hour Emergency Plumbing",
+      "city": "Phoenix",
+      "state": "AZ",
+      "lead_score": 45,
+      "score_breakdown": {
+        "no_click_to_call": 0,
+        "no_sticky_cta": 25,
+        "weak_headline": 20,
+        "poor_mobile": 0
+      },
+      "issues": [
+        "No sticky call-to-action",
+        "Weak or missing headline"
+      ],
+      "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": false, \"has_weak_headline\": false, \"has_poor_mobile\": true, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 25, \"weak_headline\": 20, \"poor_mobile\": 0}, \"issues\": [\"No sticky call-to-action\", \"Weak or missing headline\"]}",
+      "has_click_to_call": true,
+      "has_sticky_cta": false,
+      "has_weak_headline": false,
+      "has_poor_mobile": true,
+      "status": "PRIORITY",
+      "demo_site_path": "E:\\playground\\Plumber\\demo_sites\\Phoenix\\Okane_Plumbing.html",
+      "demo_site_url": "file://E:\\playground\\Plumber\\demo_sites\\Phoenix\\Okane_Plumbing.html"
+    },
+    {
+      "business_name": "Roto-Rooter Phoenix",
+      "website": "https://www.rotorooter.com/phoenix/",
+      "phone": "(623) 915-0995",
+      "address": "Phoenix, AZ",
+      "services": "24 Hour Emergency Plumbing, Drain Cleaning",
+      "city": "Phoenix",
+      "state": "AZ",
+      "lead_score": 30,
+      "score_breakdown": {
+        "no_click_to_call": 0,
+        "no_sticky_cta": 0,
+        "weak_headline": 20,
+        "poor_mobile": 10
+      },
+      "issues": [
+        "Weak or missing headline",
+        "Poor mobile optimization"
+      ],
+      "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": true, \"has_weak_headline\": false, \"has_poor_mobile\": false, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 0, \"weak_headline\": 20, \"poor_mobile\": 10}, \"issues\": [\"Weak or missing headline\", \"Poor mobile optimization\"]}",
+      "has_click_to_call": true,
+      "has_sticky_cta": true,
+      "has_weak_headline": false,
+      "has_poor_mobile": false,
+      "status": "PRIORITY",
+      "demo_site_path": "E:\\playground\\Plumber\\demo_sites\\Phoenix\\Roto-Rooter_Phoenix.html",
+      "demo_site_url": "file://E:\\playground\\Plumber\\demo_sites\\Phoenix\\Roto-Rooter_Phoenix.html"
+    },
+    {
+      "business_name": "Parker & Sons",
+      "website": "https://www.parkerandsons.com/",
+      "phone": null,
+      "address": "Phoenix, AZ",
+      "services": "Emergency Plumber, HVAC, Electrical",
+      "city": "Phoenix",
+      "state": "AZ",
+      "lead_score": 30,
+      "score_breakdown": {
+        "no_click_to_call": 0,
+        "no_sticky_cta": 0,
+        "weak_headline": 20,
+        "poor_mobile": 10
+      },
+      "issues": [
+        "Weak or missing headline",
+        "Poor mobile optimization"
+      ],
+      "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": true, \"has_weak_headline\": false, \"has_poor_mobile\": false, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 0, \"weak_headline\": 20, \"poor_mobile\": 10}, \"issues\": [\"Weak or missing headline\", \"Poor mobile optimization\"]}",
+      "has_click_to_call": true,
+      "has_sticky_cta": true,
+      "has_weak_headline": false,
+      "has_poor_mobile": false,
+      "status": "PRIORITY",
+      "demo_site_path": "E:\\playground\\Plumber\\demo_sites\\Phoenix\\Parker__Sons.html",
+      "demo_site_url": "file://E:\\playground\\Plumber\\demo_sites\\Phoenix\\Parker__Sons.html"
+    },
+    {
+      "business_name": "Simon's Plumbing",
+      "website": "https://simonsplumbingaz.com/",
+      "phone": "(602) 739-4117",
+      "email": "simon@simonsplumbingaz.com",
+      "address": "Phoenix, AZ",
+      "services": "Full-Service Plumbing, 24/7",
+      "city": "Phoenix",
+      "state": "AZ",
+      "lead_score": 30,
+      "score_breakdown": {
+        "no_click_to_call": 0,
+        "no_sticky_cta": 0,
+        "weak_headline": 20,
+        "poor_mobile": 10
+      },
+      "issues": [
+        "Weak or missing headline",
+        "Poor mobile optimization"
+      ],
+      "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": true, \"has_weak_headline\": false, \"has_poor_mobile\": false, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 0, \"weak_headline\": 20, \"poor_mobile\": 10}, \"issues\": [\"Weak or missing headline\", \"Poor mobile optimization\"]}",
+      "has_click_to_call": true,
+      "has_sticky_cta": true,
+      "has_weak_headline": false,
+      "has_poor_mobile": false,
+      "status": "PRIORITY",
+      "demo_site_path": "E:\\playground\\Plumber\\demo_sites\\Phoenix\\Simons_Plumbing.html",
+      "demo_site_url": "file://E:\\playground\\Plumber\\demo_sites\\Phoenix\\Simons_Plumbing.html"
+    },
+    {
+      "business_name": "Quail Plumbing",
+      "website": "https://www.quailplumbing.com/",
+      "phone": "(602) 493-9822",
+      "address": "Phoenix, AZ 85024",
+      "services": "Drain Cleaning, 24 Hr Emergency",
+      "city": "Phoenix",
+      "state": "AZ",
+      "lead_score": 30,
+      "score_breakdown": {
+        "no_click_to_call": 0,
+        "no_sticky_cta": 0,
+        "weak_headline": 20,
+        "poor_mobile": 10
+      },
+      "issues": [
+        "Weak or missing headline",
+        "Poor mobile optimization"
+      ],
+      "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": true, \"has_weak_headline\": false, \"has_poor_mobile\": false, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 0, \"weak_headline\": 20, \"poor_mobile\": 10}, \"issues\": [\"Weak or missing headline\", \"Poor mobile optimization\"]}",
+      "has_click_to_call": true,
+      "has_sticky_cta": true,
+      "has_weak_headline": false,
+      "has_poor_mobile": false,
+      "status": "PRIORITY",
+      "demo_site_path": "E:\\playground\\Plumber\\demo_sites\\Phoenix\\Quail_Plumbing.html",
+      "demo_site_url": "file://E:\\playground\\Plumber\\demo_sites\\Phoenix\\Quail_Plumbing.html"
+    },
+    {
+      "business_name": "Howard Air & Plumbing",
+      "website": "https://howardair.com/",
+      "phone": "(480) 508-9866",
+      "address": "Phoenix, AZ",
+      "services": "Plumbing Repair, 24 Hour Emergency",
+      "city": "Phoenix",
+      "state": "AZ",
+      "lead_score": 30,
+      "score_breakdown": {
+        "no_click_to_call": 0,
+        "no_sticky_cta": 0,
+        "weak_headline": 20,
+        "poor_mobile": 10
+      },
+      "issues": [
+        "Weak or missing headline",
+        "Poor mobile optimization"
+      ],
+      "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": true, \"has_weak_headline\": false, \"has_poor_mobile\": false, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 0, \"weak_headline\": 20, \"poor_mobile\": 10}, \"issues\": [\"Weak or missing headline\", \"Poor mobile optimization\"]}",
+      "has_click_to_call": true,
+      "has_sticky_cta": true,
+      "has_weak_headline": false,
+      "has_poor_mobile": false,
+      "status": "PRIORITY",
+      "demo_site_path": "E:\\playground\\Plumber\\demo_sites\\Phoenix\\Howard_Air__Plumbing.html",
+      "demo_site_url": "file://E:\\playground\\Plumber\\demo_sites\\Phoenix\\Howard_Air__Plumbing.html"
+    }
+  ],
+  "backlog": [
+    {
+      "business_name": "Arizona Emergency Plumbers",
+      "website": "https://arizonaemergencyplumbers.org/",
+      "phone": null,
+      "address": "Phoenix, AZ",
+      "services": "24/7 Emergency Services, Licensed",
+      "city": "Phoenix",
+      "state": "AZ",
+      "lead_score": 30,
+      "score_breakdown": {
+        "no_click_to_call": 0,
+        "no_sticky_cta": 0,
+        "weak_headline": 20,
+        "poor_mobile": 10
+      },
+      "issues": [
+        "Weak or missing headline",
+        "Poor mobile optimization"
+      ],
+      "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": true, \"has_weak_headline\": false, \"has_poor_mobile\": false, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 0, \"weak_headline\": 20, \"poor_mobile\": 10}, \"issues\": [\"Weak or missing headline\", \"Poor mobile optimization\"]}",
+      "has_click_to_call": true,
+      "has_sticky_cta": true,
+      "has_weak_headline": false,
+      "has_poor_mobile": false,
+      "status": "BACKLOG"
+    },
+    {
+      "business_name": "Bridge Plumbing HVAC",
+      "website": "https://bridgeplumbinghvac.com/",
+      "phone": null,
+      "address": "Phoenix, AZ",
+      "services": "24/7 Plumbing and HVAC",
+      "city": "Phoenix",
+      "state": "AZ",
+      "lead_score": 30,
+      "score_breakdown": {
+        "no_click_to_call": 0,
+        "no_sticky_cta": 0,
+        "weak_headline": 20,
+        "poor_mobile": 10
+      },
+      "issues": [
+        "Weak or missing headline",
+        "Poor mobile optimization"
+      ],
+      "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": true, \"has_weak_headline\": false, \"has_poor_mobile\": false, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 0, \"weak_headline\": 20, \"poor_mobile\": 10}, \"issues\": [\"Weak or missing headline\", \"Poor mobile optimization\"]}",
+      "has_click_to_call": true,
+      "has_sticky_cta": true,
+      "has_weak_headline": false,
+      "has_poor_mobile": false,
+      "status": "BACKLOG"
+    },
+    {
+      "business_name": "Pipe Masters",
+      "website": "https://www.pipemastersaz.com/",
+      "phone": "(480) 707-3067",
+      "address": "Phoenix, AZ",
+      "services": "Emergency Plumbing, 24/7 Service",
+      "city": "Phoenix",
+      "state": "AZ",
+      "lead_score": 20,
+      "score_breakdown": {
+        "no_click_to_call": 0,
+        "no_sticky_cta": 0,
+        "weak_headline": 20,
+        "poor_mobile": 0
+      },
+      "issues": [
+        "Weak or missing headline"
+      ],
+      "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": true, \"has_weak_headline\": false, \"has_poor_mobile\": true, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 0, \"weak_headline\": 20, \"poor_mobile\": 0}, \"issues\": [\"Weak or missing headline\"]}",
+      "has_click_to_call": true,
+      "has_sticky_cta": true,
+      "has_weak_headline": false,
+      "has_poor_mobile": true,
+      "status": "BACKLOG"
+    },
+    {
+      "business_name": "Sparkle Air",
+      "website": "https://www.sparkleairaz.com/",
+      "phone": "(480) 276-3254",
+      "address": "Phoenix, AZ",
+      "services": "Emergency Plumbing, HVAC",
+      "city": "Phoenix",
+      "state": "AZ",
+      "lead_score": 20,
+      "score_breakdown": {
+        "no_click_to_call": 0,
+        "no_sticky_cta": 0,
+        "weak_headline": 20,
+        "poor_mobile": 0
+      },
+      "issues": [
+        "Weak or missing headline"
+      ],
+      "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": true, \"has_weak_headline\": false, \"has_poor_mobile\": true, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 0, \"weak_headline\": 20, \"poor_mobile\": 0}, \"issues\": [\"Weak or missing headline\"]}",
+      "has_click_to_call": true,
+      "has_sticky_cta": true,
+      "has_weak_headline": false,
+      "has_poor_mobile": true,
+      "status": "BACKLOG"
+    }
+  ]
+}

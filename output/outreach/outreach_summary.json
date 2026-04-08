@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-04-07T22:00:55.538203",
+  "mode": "MANUAL",
+  "auto_enabled": false,
+  "total_emails": 50,
+  "total_sms": 30,
+  "total_leads": 50,
+  "by_city": {
+    "Tucson": {
+      "emails": 10,
+      "sms": 10
+    },
+    "Phoenix": {
+      "emails": 10,
+      "sms": 10
+    },
+    "Dallas": {
+      "emails": 10,
+      "sms": 10
+    },
+    "Tampa": {
+      "emails": 10,
+      "sms": 0
+    },
+    "Las Vegas": {
+      "emails": 10,
+      "sms": 0
+    }
+  }
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "message": "Quick fix for your website - this could bring more emergency calls: file://E:\\playground\\Plumber\\demo_sites\\Tucson\\Woods_Plumbing.html",
+    "char_count": 134,
+    "lead_id": "Wood's Plumbing",
+    "city": "Tucson",
+    "phone": "(520) 682-2233",
+    "status": "PENDING",
+    "created_at": "2026-04-07T22:00:55.467430"
+  },
+  {
+    "message": "Quick fix for your website - this could bring more emergency calls: file://E:\\playground\\Plumber\\demo_sites\\Tucson\\Big_Eds_Plumbing.html",
+    "char_count": 136,
+    "lead_id": "Big Ed's Plumbing",
+    "city": "Tucson",
+    "phone": null,
+    "status": "PENDING",
+    "created_at": "2026-04-07T22:00:55.467452"
+  },
+  {
+    "message": "Quick fix for your website - this could bring more emergency calls: file://E:\\playground\\Plumber\\demo_sites\\Tucson\\Tucson_24_Hour_Plumber_and_Drain.html",
+    "char_count": 152,
+    "lead_id": "Tucson 24 Hour Plumber and Drain",
+    "city": "Tucson",
+    "phone": "(520) 252-4044",
+    "status": "PENDING",
+    "created_at": "2026-04-07T22:00:55.467469"
+  },
+  {
+    "message": "Quick fix for your website - this could bring more emergency calls: file://E:\\playground\\Plumber\\demo_sites\\Tucson\\ASG_Plumbing_Enterprises.html",
+    "char_count": 144,
+    "lead_id": "A.S.G. Plumbing Enterprises",
+    "city": "Tucson",
+    "phone": "(520) 333-2121",
+    "status": "PENDING",
+    "created_at": "2026-04-07T22:00:55.467482"
+  },
+  {
+    "message": "Quick fix for your website - this could bring more emergency calls: file://E:\\playground\\Plumber\\demo_sites\\Tucson\\Cummings_Plumbing_Heating_and_Cooling.html",
+    "char_count": 157,
+    "lead_id": "Cummings Plumbing Heating and Cooling",
+    "city": "Tucson",
+    "phone": "(520) 333-2121",
+    "status": "PENDING",
+    "created_at": "2026-04-07T22:00:55.467496"
+  },
+  {
+    "message": "Quick fix for your website - this could bring more emergency calls: file://E:\\playground\\Plumber\\demo_sites\\Tucson\\Roto-Rooter_Tucson.html",
+    "char_count": 138,
+    "lead_id": "Roto-Rooter Tucson",
+    "city": "Tucson",
+    "phone": "(520) 518-3769",
+    "status": "PENDING",
+    "created_at": "2026-04-07T22:00:55.467512"
+  },
+  {
+    "message": "Quick fix for your website - this could bring more emergency calls: file://E:\\playground\\Plumber\\demo_sites\\Tucson\\Al_Coronado_Plumbing.html",
+    "char_count": 140,
+    "lead_id": "Al Coronado Plumbing",
+    "city": "Tucson",
+    "phone": null,
+    "status": "PENDING",
+    "created_at": "2026-04-07T22:00:55.467525"
+  },
+  {
+    "message": "Quick fix for your website - this could bring more emergency calls: file://E:\\playground\\Plumber\\demo_sites\\Tucson\\Right_Now_Plumbing.html",
+    "char_count": 138,
+    "lead_id": "Right Now Plumbing",
+    "city": "Tucson",
+    "phone": null,
+    "status": "PENDING",
+    "created_at": "2026-04-07T22:00:55.467537"
+  },
+  {
+    "message": "Quick fix for your website - this could bring more emergency calls: file://E:\\playground\\Plumber\\demo_sites\\Tucson\\Tucson_Plumbing_Pros.html",
+    "char_count": 140,
+    "lead_id": "Tucson Plumbing Pros",
+    "city": "Tucson",
+    "phone": "(520) 438-6111",
+    "status": "PENDING",
+    "created_at": "2026-04-07T22:00:55.467549"
+  },
+  {
+    "message": "Quick fix for your website - this could bring more emergency calls: file://E:\\playground\\Plumber\\demo_sites\\Tucson\\On_The_Way_Plumbing.html",
+    "char_count": 139,
+    "lead_id": "On The Way Plumbing",
+    "city": "Tucson",
+    "phone": null,
+    "status": "PENDING",
+    "created_at": "2026-04-07T22:00:55.467561"
+  }
+]

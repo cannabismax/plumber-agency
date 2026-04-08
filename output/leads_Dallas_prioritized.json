@@ -1,0 +1,390 @@
+{
+  "priority": [
+    {
+      "business_name": "Glens Plumbing",
+      "website": "http://glensplumbing.com/",
+      "phone": "(214) 429-4634",
+      "address": "Dallas, TX",
+      "services": "Drain Cleaning, Sewer Repair, 4.9 Stars",
+      "city": "Dallas",
+      "state": "TX",
+      "lead_score": 75,
+      "score_breakdown": {
+        "no_click_to_call": 30,
+        "no_sticky_cta": 25,
+        "weak_headline": 20,
+        "poor_mobile": 0
+      },
+      "issues": [
+        "Missing click-to-call button",
+        "No sticky call-to-action",
+        "Weak or missing headline"
+      ],
+      "analysis_data": "{\"has_click_to_call\": false, \"has_sticky_cta\": false, \"has_weak_headline\": false, \"has_poor_mobile\": true, \"score_breakdown\": {\"no_click_to_call\": 30, \"no_sticky_cta\": 25, \"weak_headline\": 20, \"poor_mobile\": 0}, \"issues\": [\"Missing click-to-call button\", \"No sticky call-to-action\", \"Weak or missing headline\"]}",
+      "has_click_to_call": false,
+      "has_sticky_cta": false,
+      "has_weak_headline": false,
+      "has_poor_mobile": true,
+      "status": "PRIORITY",
+      "demo_site_path": "E:\\playground\\Plumber\\demo_sites\\Dallas\\Glens_Plumbing.html",
+      "demo_site_url": "file://E:\\playground\\Plumber\\demo_sites\\Dallas\\Glens_Plumbing.html"
+    },
+    {
+      "business_name": "1-800-Plumber Dallas",
+      "website": "https://1800plumber.com/dallas-tx/",
+      "phone": "(214) 935-8547",
+      "address": "Dallas, TX",
+      "services": "24/7 Emergency Plumbing",
+      "city": "Dallas",
+      "state": "TX",
+      "lead_score": 55,
+      "score_breakdown": {
+        "no_click_to_call": 30,
+        "no_sticky_cta": 25,
+        "weak_headline": 0,
+        "poor_mobile": 0
+      },
+      "issues": [
+        "Missing click-to-call button",
+        "No sticky call-to-action"
+      ],
+      "analysis_data": "{\"has_click_to_call\": false, \"has_sticky_cta\": false, \"has_weak_headline\": true, \"has_poor_mobile\": true, \"score_breakdown\": {\"no_click_to_call\": 30, \"no_sticky_cta\": 25, \"weak_headline\": 0, \"poor_mobile\": 0}, \"issues\": [\"Missing click-to-call button\", \"No sticky call-to-action\"]}",
+      "has_click_to_call": false,
+      "has_sticky_cta": false,
+      "has_weak_headline": true,
+      "has_poor_mobile": true,
+      "status": "PRIORITY",
+      "demo_site_path": "E:\\playground\\Plumber\\demo_sites\\Dallas\\1-800-Plumber_Dallas.html",
+      "demo_site_url": "file://E:\\playground\\Plumber\\demo_sites\\Dallas\\1-800-Plumber_Dallas.html"
+    },
+    {
+      "business_name": "448 Plumbing",
+      "website": "https://www.448plumbing.com/",
+      "phone": null,
+      "address": "Dallas, TX",
+      "services": "Emergency Plumbing, Licensed",
+      "city": "Dallas",
+      "state": "TX",
+      "lead_score": 45,
+      "score_breakdown": {
+        "no_click_to_call": 0,
+        "no_sticky_cta": 25,
+        "weak_headline": 20,
+        "poor_mobile": 0
+      },
+      "issues": [
+        "No sticky call-to-action",
+        "Weak or missing headline"
+      ],
+      "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": false, \"has_weak_headline\": false, \"has_poor_mobile\": true, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 25, \"weak_headline\": 20, \"poor_mobile\": 0}, \"issues\": [\"No sticky call-to-action\", \"Weak or missing headline\"]}",
+      "has_click_to_call": true,
+      "has_sticky_cta": false,
+      "has_weak_headline": false,
+      "has_poor_mobile": true,
+      "status": "PRIORITY",
+      "demo_site_path": "E:\\playground\\Plumber\\demo_sites\\Dallas\\448_Plumbing.html",
+      "demo_site_url": "file://E:\\playground\\Plumber\\demo_sites\\Dallas\\448_Plumbing.html"
+    },
+    {
+      "business_name": "Texas Rooter",
+      "website": "https://www.texasrooter.com/",
+      "phone": null,
+      "address": "Dallas, TX",
+      "services": "Plumbing, Drain Cleaning, 24-Hour",
+      "city": "Dallas",
+      "state": "TX",
+      "lead_score": 45,
+      "score_breakdown": {
+        "no_click_to_call": 0,
+        "no_sticky_cta": 25,
+        "weak_headline": 20,
+        "poor_mobile": 0
+      },
+      "issues": [
+        "No sticky call-to-action",
+        "Weak or missing headline"
+      ],
+      "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": false, \"has_weak_headline\": false, \"has_poor_mobile\": true, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 25, \"weak_headline\": 20, \"poor_mobile\": 0}, \"issues\": [\"No sticky call-to-action\", \"Weak or missing headline\"]}",
+      "has_click_to_call": true,
+      "has_sticky_cta": false,
+      "has_weak_headline": false,
+      "has_poor_mobile": true,
+      "status": "PRIORITY",
+      "demo_site_path": "E:\\playground\\Plumber\\demo_sites\\Dallas\\Texas_Rooter.html",
+      "demo_site_url": "file://E:\\playground\\Plumber\\demo_sites\\Dallas\\Texas_Rooter.html"
+    },
+    {
+      "business_name": "Baker Brothers Plumbing",
+      "website": "https://bakerbrothersplumbing.com/",
+      "phone": "(214) 296-2136",
+      "address": "Dallas, TX",
+      "services": "Emergency Plumbing, 24 Hour",
+      "city": "Dallas",
+      "state": "TX",
+      "lead_score": 30,
+      "score_breakdown": {
+        "no_click_to_call": 0,
+        "no_sticky_cta": 0,
+        "weak_headline": 20,
+        "poor_mobile": 10
+      },
+      "issues": [
+        "Weak or missing headline",
+        "Poor mobile optimization"
+      ],
+      "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": true, \"has_weak_headline\": false, \"has_poor_mobile\": false, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 0, \"weak_headline\": 20, \"poor_mobile\": 10}, \"issues\": [\"Weak or missing headline\", \"Poor mobile optimization\"]}",
+      "has_click_to_call": true,
+      "has_sticky_cta": true,
+      "has_weak_headline": false,
+      "has_poor_mobile": false,
+      "status": "PRIORITY",
+      "demo_site_path": "E:\\playground\\Plumber\\demo_sites\\Dallas\\Baker_Brothers_Plumbing.html",
+      "demo_site_url": "file://E:\\playground\\Plumber\\demo_sites\\Dallas\\Baker_Brothers_Plumbing.html"
+    },
+    {
+      "business_name": "Emergency Plumbing on Call",
+      "website": "https://emergencyplumbingoncall.com/",
+      "phone": "(972) 597-5959",
+      "address": "Dallas, TX",
+      "services": "24/7 Emergency, 20+ Years Experience",
+      "city": "Dallas",
+      "state": "TX",
+      "lead_score": 30,
+      "score_breakdown": {
+        "no_click_to_call": 0,
+        "no_sticky_cta": 0,
+        "weak_headline": 20,
+        "poor_mobile": 10
+      },
+      "issues": [
+        "Weak or missing headline",
+        "Poor mobile optimization"
+      ],
+      "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": true, \"has_weak_headline\": false, \"has_poor_mobile\": false, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 0, \"weak_headline\": 20, \"poor_mobile\": 10}, \"issues\": [\"Weak or missing headline\", \"Poor mobile optimization\"]}",
+      "has_click_to_call": true,
+      "has_sticky_cta": true,
+      "has_weak_headline": false,
+      "has_poor_mobile": false,
+      "status": "PRIORITY",
+      "demo_site_path": "E:\\playground\\Plumber\\demo_sites\\Dallas\\Emergency_Plumbing_on_Call.html",
+      "demo_site_url": "file://E:\\playground\\Plumber\\demo_sites\\Dallas\\Emergency_Plumbing_on_Call.html"
+    },
+    {
+      "business_name": "Lee's Air Plumbing",
+      "website": "https://leesair.com/",
+      "phone": null,
+      "address": "Dallas, TX",
+      "services": "Emergency Plumbing, HVAC",
+      "city": "Dallas",
+      "state": "TX",
+      "lead_score": 30,
+      "score_breakdown": {
+        "no_click_to_call": 0,
+        "no_sticky_cta": 0,
+        "weak_headline": 20,
+        "poor_mobile": 10
+      },
+      "issues": [
+        "Weak or missing headline",
+        "Poor mobile optimization"
+      ],
+      "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": true, \"has_weak_headline\": false, \"has_poor_mobile\": false, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 0, \"weak_headline\": 20, \"poor_mobile\": 10}, \"issues\": [\"Weak or missing headline\", \"Poor mobile optimization\"]}",
+      "has_click_to_call": true,
+      "has_sticky_cta": true,
+      "has_weak_headline": false,
+      "has_poor_mobile": false,
+      "status": "PRIORITY",
+      "demo_site_path": "E:\\playground\\Plumber\\demo_sites\\Dallas\\Lees_Air_Plumbing.html",
+      "demo_site_url": "file://E:\\playground\\Plumber\\demo_sites\\Dallas\\Lees_Air_Plumbing.html"
+    },
+    {
+      "business_name": "Pure Plumbing DFW",
+      "website": "https://www.pureplumbingdfw.com/",
+      "phone": null,
+      "address": "Dallas, TX",
+      "services": "24/7 Emergency Plumbing",
+      "city": "Dallas",
+      "state": "TX",
+      "lead_score": 30,
+      "score_breakdown": {
+        "no_click_to_call": 0,
+        "no_sticky_cta": 0,
+        "weak_headline": 20,
+        "poor_mobile": 10
+      },
+      "issues": [
+        "Weak or missing headline",
+        "Poor mobile optimization"
+      ],
+      "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": true, \"has_weak_headline\": false, \"has_poor_mobile\": false, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 0, \"weak_headline\": 20, \"poor_mobile\": 10}, \"issues\": [\"Weak or missing headline\", \"Poor mobile optimization\"]}",
+      "has_click_to_call": true,
+      "has_sticky_cta": true,
+      "has_weak_headline": false,
+      "has_poor_mobile": false,
+      "status": "PRIORITY",
+      "demo_site_path": "E:\\playground\\Plumber\\demo_sites\\Dallas\\Pure_Plumbing_DFW.html",
+      "demo_site_url": "file://E:\\playground\\Plumber\\demo_sites\\Dallas\\Pure_Plumbing_DFW.html"
+    },
+    {
+      "business_name": "Reliant Plumbing",
+      "website": "https://reliantplumbing.com/",
+      "phone": null,
+      "address": "Dallas, TX",
+      "services": "24 Hour Emergency Plumbing",
+      "city": "Dallas",
+      "state": "TX",
+      "lead_score": 30,
+      "score_breakdown": {
+        "no_click_to_call": 0,
+        "no_sticky_cta": 0,
+        "weak_headline": 20,
+        "poor_mobile": 10
+      },
+      "issues": [
+        "Weak or missing headline",
+        "Poor mobile optimization"
+      ],
+      "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": true, \"has_weak_headline\": false, \"has_poor_mobile\": false, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 0, \"weak_headline\": 20, \"poor_mobile\": 10}, \"issues\": [\"Weak or missing headline\", \"Poor mobile optimization\"]}",
+      "has_click_to_call": true,
+      "has_sticky_cta": true,
+      "has_weak_headline": false,
+      "has_poor_mobile": false,
+      "status": "PRIORITY",
+      "demo_site_path": "E:\\playground\\Plumber\\demo_sites\\Dallas\\Reliant_Plumbing.html",
+      "demo_site_url": "file://E:\\playground\\Plumber\\demo_sites\\Dallas\\Reliant_Plumbing.html"
+    },
+    {
+      "business_name": "Astar Air Conditioning",
+      "website": "https://astardfw.com/",
+      "phone": null,
+      "address": "Dallas-Fort Worth, TX",
+      "services": "Emergency Plumbing, Fast Response",
+      "city": "Dallas",
+      "state": "TX",
+      "lead_score": 30,
+      "score_breakdown": {
+        "no_click_to_call": 0,
+        "no_sticky_cta": 0,
+        "weak_headline": 20,
+        "poor_mobile": 10
+      },
+      "issues": [
+        "Weak or missing headline",
+        "Poor mobile optimization"
+      ],
+      "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": true, \"has_weak_headline\": false, \"has_poor_mobile\": false, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 0, \"weak_headline\": 20, \"poor_mobile\": 10}, \"issues\": [\"Weak or missing headline\", \"Poor mobile optimization\"]}",
+      "has_click_to_call": true,
+      "has_sticky_cta": true,
+      "has_weak_headline": false,
+      "has_poor_mobile": false,
+      "status": "PRIORITY",
+      "demo_site_path": "E:\\playground\\Plumber\\demo_sites\\Dallas\\Astar_Air_Conditioning.html",
+      "demo_site_url": "file://E:\\playground\\Plumber\\demo_sites\\Dallas\\Astar_Air_Conditioning.html"
+    }
+  ],
+  "backlog": [
+    {
+      "business_name": "Jerry's Plumbing Heating",
+      "website": "https://jerrysplumbingheating.com/",
+      "phone": null,
+      "address": "Dallas, TX",
+      "services": "Emergency Plumbing, Rapid Response",
+      "city": "Dallas",
+      "state": "TX",
+      "lead_score": 30,
+      "score_breakdown": {
+        "no_click_to_call": 0,
+        "no_sticky_cta": 0,
+        "weak_headline": 20,
+        "poor_mobile": 10
+      },
+      "issues": [
+        "Weak or missing headline",
+        "Poor mobile optimization"
+      ],
+      "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": true, \"has_weak_headline\": false, \"has_poor_mobile\": false, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 0, \"weak_headline\": 20, \"poor_mobile\": 10}, \"issues\": [\"Weak or missing headline\", \"Poor mobile optimization\"]}",
+      "has_click_to_call": true,
+      "has_sticky_cta": true,
+      "has_weak_headline": false,
+      "has_poor_mobile": false,
+      "status": "BACKLOG"
+    },
+    {
+      "business_name": "Dallas Plumbing & AC",
+      "website": "https://dallasplumbing.com/",
+      "phone": "(469) 213-2459",
+      "address": "Dallas, TX",
+      "services": "Emergency Plumber, Since 1903",
+      "city": "Dallas",
+      "state": "TX",
+      "lead_score": 30,
+      "score_breakdown": {
+        "no_click_to_call": 0,
+        "no_sticky_cta": 0,
+        "weak_headline": 20,
+        "poor_mobile": 10
+      },
+      "issues": [
+        "Weak or missing headline",
+        "Poor mobile optimization"
+      ],
+      "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": true, \"has_weak_headline\": false, \"has_poor_mobile\": false, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 0, \"weak_headline\": 20, \"poor_mobile\": 10}, \"issues\": [\"Weak or missing headline\", \"Poor mobile optimization\"]}",
+      "has_click_to_call": true,
+      "has_sticky_cta": true,
+      "has_weak_headline": false,
+      "has_poor_mobile": false,
+      "status": "BACKLOG"
+    },
+    {
+      "business_name": "All Masters Plumbing",
+      "website": "https://allmastersplumbing.com/",
+      "phone": null,
+      "address": "Dallas-Fort Worth, TX",
+      "services": "24-Hour Emergency, Same-Day",
+      "city": "Dallas",
+      "state": "TX",
+      "lead_score": 30,
+      "score_breakdown": {
+        "no_click_to_call": 0,
+        "no_sticky_cta": 0,
+        "weak_headline": 20,
+        "poor_mobile": 10
+      },
+      "issues": [
+        "Weak or missing headline",
+        "Poor mobile optimization"
+      ],
+      "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": true, \"has_weak_headline\": false, \"has_poor_mobile\": false, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 0, \"weak_headline\": 20, \"poor_mobile\": 10}, \"issues\": [\"Weak or missing headline\", \"Poor mobile optimization\"]}",
+      "has_click_to_call": true,
+      "has_sticky_cta": true,
+      "has_weak_headline": false,
+      "has_poor_mobile": false,
+      "status": "BACKLOG"
+    },
+    {
+      "business_name": "Garza's Plumbing",
+      "website": "https://garzasplumbing.com/",
+      "phone": null,
+      "address": "Dallas, TX",
+      "services": "24/7 Emergency, Licensed Experts",
+      "city": "Dallas",
+      "state": "TX",
+      "lead_score": 20,
+      "score_breakdown": {
+        "no_click_to_call": 0,
+        "no_sticky_cta": 0,
+        "weak_headline": 20,
+        "poor_mobile": 0
+      },
+      "issues": [
+        "Weak or missing headline"
+      ],
+      "analysis_data": "{\"has_click_to_call\": true, \"has_sticky_cta\": true, \"has_weak_headline\": false, \"has_poor_mobile\": true, \"score_breakdown\": {\"no_click_to_call\": 0, \"no_sticky_cta\": 0, \"weak_headline\": 20, \"poor_mobile\": 0}, \"issues\": [\"Weak or missing headline\"]}",
+      "has_click_to_call": true,
+      "has_sticky_cta": true,
+      "has_weak_headline": false,
+      "has_poor_mobile": true,
+      "status": "BACKLOG"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "message": "Quick fix for your website - this could bring more emergency calls: file://E:\\playground\\Plumber\\demo_sites\\Dallas\\Glens_Plumbing.html",
+    "char_count": 134,
+    "lead_id": "Glens Plumbing",
+    "city": "Dallas",
+    "phone": "(214) 429-4634",
+    "status": "PENDING",
+    "created_at": "2026-04-07T22:00:55.502709"
+  },
+  {
+    "message": "Quick fix for your website - this could bring more emergency calls: file://E:\\playground\\Plumber\\demo_sites\\Dallas\\1-800-Plumber_Dallas.html",
+    "char_count": 140,
+    "lead_id": "1-800-Plumber Dallas",
+    "city": "Dallas",
+    "phone": "(214) 935-8547",
+    "status": "PENDING",
+    "created_at": "2026-04-07T22:00:55.502725"
+  },
+  {
+    "message": "Quick fix for your website - this could bring more emergency calls: file://E:\\playground\\Plumber\\demo_sites\\Dallas\\448_Plumbing.html",
+    "char_count": 132,
+    "lead_id": "448 Plumbing",
+    "city": "Dallas",
+    "phone": null,
+    "status": "PENDING",
+    "created_at": "2026-04-07T22:00:55.502738"
+  },
+  {
+    "message": "Quick fix for your website - this could bring more emergency calls: file://E:\\playground\\Plumber\\demo_sites\\Dallas\\Texas_Rooter.html",
+    "char_count": 132,
+    "lead_id": "Texas Rooter",
+    "city": "Dallas",
+    "phone": null,
+    "status": "PENDING",
+    "created_at": "2026-04-07T22:00:55.502750"
+  },
+  {
+    "message": "Quick fix for your website - this could bring more emergency calls: file://E:\\playground\\Plumber\\demo_sites\\Dallas\\Baker_Brothers_Plumbing.html",
+    "char_count": 143,
+    "lead_id": "Baker Brothers Plumbing",
+    "city": "Dallas",
+    "phone": "(214) 296-2136",
+    "status": "PENDING",
+    "created_at": "2026-04-07T22:00:55.502768"
+  },
+  {
+    "message": "Quick fix for your website - this could bring more emergency calls: file://E:\\playground\\Plumber\\demo_sites\\Dallas\\Emergency_Plumbing_on_Call.html",
+    "char_count": 146,
+    "lead_id": "Emergency Plumbing on Call",
+    "city": "Dallas",
+    "phone": "(972) 597-5959",
+    "status": "PENDING",
+    "created_at": "2026-04-07T22:00:55.502781"
+  },
+  {
+    "message": "Quick fix for your website - this could bring more emergency calls: file://E:\\playground\\Plumber\\demo_sites\\Dallas\\Lees_Air_Plumbing.html",
+    "char_count": 137,
+    "lead_id": "Lee's Air Plumbing",
+    "city": "Dallas",
+    "phone": null,
+    "status": "PENDING",
+    "created_at": "2026-04-07T22:00:55.502794"
+  },
+  {
+    "message": "Quick fix for your website - this could bring more emergency calls: file://E:\\playground\\Plumber\\demo_sites\\Dallas\\Pure_Plumbing_DFW.html",
+    "char_count": 137,
+    "lead_id": "Pure Plumbing DFW",
+    "city": "Dallas",
+    "phone": null,
+    "status": "PENDING",
+    "created_at": "2026-04-07T22:00:55.502807"
+  },
+  {
+    "message": "Quick fix for your website - this could bring more emergency calls: file://E:\\playground\\Plumber\\demo_sites\\Dallas\\Reliant_Plumbing.html",
+    "char_count": 136,
+    "lead_id": "Reliant Plumbing",
+    "city": "Dallas",
+    "phone": null,
+    "status": "PENDING",
+    "created_at": "2026-04-07T22:00:55.502818"
+  },
+  {
+    "message": "Quick fix for your website - this could bring more emergency calls: file://E:\\playground\\Plumber\\demo_sites\\Dallas\\Astar_Air_Conditioning.html",
+    "char_count": 142,
+    "lead_id": "Astar Air Conditioning",
+    "city": "Dallas",
+    "phone": null,
+    "status": "PENDING",
+    "created_at": "2026-04-07T22:00:55.502830"
+  }
+]
