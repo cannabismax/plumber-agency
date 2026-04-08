@@ -51,7 +51,7 @@ router.post("/search", async (req, res) => {
     }
 
     if (SERPAPI_KEY) {
-      const response = await fetch(`https://serpapi.com/search.json?q=${encodeURIComponent(searchQuery)}&api_key=${SERPAPI_KEY}`);
+      const response = await fetch(`https://serpapi.com/search.json?q=${encodeURIComponent(searchQuery)}&api_key=${SERPAPI_KEY}&num=10`);
       const data = await response.json();
       
       if (data.organic_results) {
@@ -66,14 +66,49 @@ router.post("/search", async (req, res) => {
       }
     }
 
-    res.json({ 
-      results: [],
-      message: "Web search requires EXA_API_KEY or SERPAPI_KEY. Add one to .env to enable discovery."
-    });
+    const fallbackResults = generatePlaceholderResults(city, state, query);
+    res.json({ results: fallbackResults, isPlaceholder: true });
   } catch (error) {
     console.error("Search error:", error);
     res.status(500).json({ error: error.message, results: [] });
   }
 });
+
+function generatePlaceholderResults(city, state, query) {
+  const businessTypes = [
+    "Plumbing Services",
+    "Emergency Plumber",
+    "Residential Plumbing",
+    "Commercial Plumbing",
+    "Drain Cleaning",
+    "Water Heater Repair",
+    "Sewer Line Services",
+    "Gas Line Installation",
+    "Leak Detection",
+    "Bathroom Remodeling"
+  ];
+
+  const names = [
+    "Metro Plumbing Co.",
+    "Quick Fix Plumbing",
+    "City Plumbing Experts",
+    "24/7 Emergency Plumbing",
+    "Premier Plumbing Services",
+    "Reliable Plumbing Pros",
+    "Budget Plumbing Solutions",
+    "Expert Plumbing & Drain",
+    "Local Plumbing Services",
+    "All-Star Plumbing"
+  ];
+
+  return names.slice(0, 10).map((name, i) => ({
+    name: name,
+    url: `https://example-plumbing-${i}.com`,
+    snippet: `${businessTypes[i % businessTypes.length]} - ${city || 'Local Area'}`,
+    city: city || "Unknown",
+    state: state || "XX",
+    isPlaceholder: true
+  }));
+}
 
 export default router;

@@ -16,13 +16,21 @@ const PRESET_CITIES = [
 function Toast({ message, type, onClose }) {
   if (!message) return null;
   
+  const styles = {
+    success: "bg-green-500/90 text-white",
+    error: "bg-red-500/90 text-white",
+    info: "bg-blue-500/90 text-white"
+  };
+  
+  const icons = {
+    success: <Check size={20} />,
+    error: <X size={20} />,
+    info: <Search size={20} />
+  };
+  
   return (
-    <div className={`fixed bottom-6 right-6 flex items-center gap-3 px-5 py-4 rounded-2xl shadow-2xl z-50 animate-slide-up ${
-      type === "success" 
-        ? "bg-green-500/90 text-white" 
-        : "bg-red-500/90 text-white"
-    }`}>
-      {type === "success" ? <Check size={20} /> : <X size={20} />}
+    <div className={`fixed bottom-6 right-6 flex items-center gap-3 px-5 py-4 rounded-2xl shadow-2xl z-50 animate-slide-up ${styles[type] || styles.info}`}>
+      {icons[type] || icons.info}
       <span className="font-medium">{message}</span>
       <button onClick={onClose} className="ml-2 hover:opacity-70">
         <X size={16} />
@@ -85,8 +93,11 @@ export default function AddLeads() {
       if (res.ok) {
         const data = await res.json();
         setSearchResults(data.results || []);
-        if (data.message && (!data.results || data.results.length === 0)) {
-          showToast("error", data.message);
+        if (data.message) {
+          showToast("info", data.message);
+        }
+        if (data.isPlaceholder) {
+          showToast("info", "Sample results - add SERPAPI_KEY or EXA_API_KEY for live search");
         }
       } else {
         showToast("error", "Search failed");

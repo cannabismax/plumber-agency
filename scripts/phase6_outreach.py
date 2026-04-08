@@ -28,9 +28,63 @@ from config.settings import (
 )
 
 
+def extract_first_name(business_name):
+    """Extract a first name from business name for personalization"""
+    if not business_name or business_name == "NULL":
+        return "there"
+
+    name = business_name.strip()
+
+    # Handle common patterns
+    if " - " in name:
+        # Format: "Big Ed - Big Ed Plumbing"
+        name = name.split(" - ")[0].strip()
+
+    if "'s" in name:
+        # Format: "Wood's Plumbing"
+        name = name.replace("'s", "").strip()
+        # Try to extract name before apostrophe s
+        if "'" in business_name:
+            parts = business_name.split("'")
+            if len(parts) > 1 and parts[0].strip():
+                name = parts[0].strip()
+
+    words = name.split()
+    if len(words) >= 2:
+        # Check if first word might be a title
+        first_word = words[0].lower()
+        if first_word in ["mr", "mrs", "ms", "dr", "prof"]:
+            if len(words) > 1:
+                return words[1]
+        # Check if it's a common plumbing term
+        elif first_word.lower() in [
+            "best",
+            "top",
+            "pro",
+            "expert",
+            "master",
+            "chief",
+            "senior",
+            "lead",
+        ]:
+            # Return the second word if it looks like a name
+            if len(words) > 1 and words[1].isalpha() and len(words[1]) > 2:
+                return words[1]
+        # First word is likely a name
+        elif words[0].isalpha() and len(words[0]) >= 2:
+            return words[0]
+
+    # Fallback - try to get something usable
+    if words and words[0].isalpha():
+        return words[0]
+
+    return "there"
+
+
 def generate_email_template(lead, demo_url):
     """Generate personalized email template for a lead"""
-    first_name = lead.get("business_name", "").split()[0]
+    business_name = lead.get("business_name", "")
+    first_name = extract_first_name(business_name)
 
     subject = OUTREACH_TEMPLATES["email"]["subject"]
 
