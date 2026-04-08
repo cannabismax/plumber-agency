@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { 
-  Users, Target, DollarSign, TrendingUp, 
-  Phone, Mail, AlertCircle, CheckCircle 
+import {
+  Users, Target, DollarSign, TrendingUp,
+  Phone, Mail, AlertCircle, CheckCircle, Star, Handshake, MessageSquare, PlusCircle
 } from "lucide-react";
+import FunnelBar from "../components/FunnelBar";
 
 const API_BASE = "http://localhost:3001/api";
 
@@ -47,6 +48,66 @@ function StatusBadge({ status }) {
     <span className={`badge ${statusConfig[status] || "badge-backlog"}`}>
       {status}
     </span>
+  );
+}
+
+function NextActions({ metrics }) {
+  const actions = [];
+
+  if ((metrics.priority_leads || 0) > 0) {
+    actions.push({
+      icon: Star,
+      color: "text-yellow-400",
+      bg: "bg-yellow-500/10 border-yellow-500/20",
+      text: `${metrics.priority_leads} leads ready for outreach`,
+      to: "/leads?status=PRIORITY"
+    });
+  }
+  if ((metrics.interested_leads || 0) > 0) {
+    actions.push({
+      icon: Handshake,
+      color: "text-purple-400",
+      bg: "bg-purple-500/10 border-purple-500/20",
+      text: `${metrics.interested_leads} interested leads — close the deal`,
+      to: "/leads?status=INTERESTED"
+    });
+  }
+  if ((metrics.responded_leads || 0) > 0) {
+    actions.push({
+      icon: MessageSquare,
+      color: "text-cyan-400",
+      bg: "bg-cyan-500/10 border-cyan-500/20",
+      text: `${metrics.responded_leads} leads responded — follow up`,
+      to: "/leads?status=RESPONDED"
+    });
+  }
+  if (actions.length === 0) {
+    actions.push({
+      icon: PlusCircle,
+      color: "text-blue-400",
+      bg: "bg-blue-500/10 border-blue-500/20",
+      text: "All caught up! Add more leads to keep the pipeline moving.",
+      to: "/add-leads"
+    });
+  }
+
+  return (
+    <div className="card">
+      <h2 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">Next Actions</h2>
+      <div className="space-y-2">
+        {actions.map((action, i) => (
+          <Link
+            key={i}
+            to={action.to}
+            className={`flex items-center gap-3 p-3 rounded-lg border ${action.bg} hover:opacity-80 transition-opacity`}
+          >
+            <action.icon size={18} className={action.color} />
+            <span className={`text-sm font-medium ${action.color}`}>{action.text}</span>
+            <span className="ml-auto text-slate-500 text-xs">→</span>
+          </Link>
+        ))}
+      </div>
+    </div>
   );
 }
 
@@ -114,6 +175,10 @@ export default function Dashboard() {
         </button>
       </div>
 
+      <NextActions metrics={metrics} />
+
+      <FunnelBar metrics={metrics} />
+
       {/* Metrics Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <MetricCard
@@ -144,39 +209,6 @@ export default function Dashboard() {
           icon={DollarSign}
           color="purple"
         />
-      </div>
-
-      {/* Pipeline Overview */}
-      <div className="card">
-        <div className="flex items-center justify-between mb-3">
-          <h2 className="text-sm font-semibold text-slate-400 uppercase tracking-wider">Sales Pipeline</h2>
-          <span className="text-xs text-slate-500">{metrics.total_leads || 0} total leads</span>
-        </div>
-        <div className="grid grid-cols-5 gap-2">
-          {[
-            { label: 'Priority', value: metrics.priority_leads || 0, color: 'text-yellow-400', bg: 'bg-yellow-400' },
-            { label: 'Contacted', value: metrics.contacted_leads || 0, color: 'text-blue-400', bg: 'bg-blue-400' },
-            { label: 'Responded', value: metrics.responded_leads || 0, color: 'text-cyan-400', bg: 'bg-cyan-400' },
-            { label: 'Interested', value: metrics.interested_leads || 0, color: 'text-purple-400', bg: 'bg-purple-400' },
-            { label: 'Closed', value: metrics.closed_leads || 0, color: 'text-green-400', bg: 'bg-green-400' },
-          ].map((stage, i) => {
-            const total = metrics.total_leads || 1;
-            const pct = Math.round((stage.value / total) * 100);
-            return (
-              <div key={stage.label} className="text-center">
-                <p className={`text-2xl font-bold ${stage.color}`}>{stage.value}</p>
-                <p className="text-xs text-slate-400 mt-0.5 mb-2">{stage.label}</p>
-                <div className="h-1.5 bg-slate-700 rounded-full overflow-hidden">
-                  <div
-                    className={`h-full ${stage.bg} rounded-full transition-all duration-700`}
-                    style={{ width: `${pct}%` }}
-                  />
-                </div>
-                <p className="text-xs text-slate-600 mt-1">{pct}%</p>
-              </div>
-            );
-          })}
-        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
