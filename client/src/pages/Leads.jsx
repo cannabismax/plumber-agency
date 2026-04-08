@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Search, Filter, ChevronLeft, ChevronRight, ExternalLink, Mail, Phone } from "lucide-react";
+import FunnelBar from "../components/FunnelBar";
 
 const API_BASE = "http://localhost:3001/api";
 
@@ -26,15 +27,23 @@ function StatusBadge({ status }) {
 }
 
 export default function Leads() {
+  const location = useLocation();
   const [leads, setLeads] = useState([]);
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(0);
-  const [filters, setFilters] = useState({ city: "All", status: "All", search: "" });
+  const [metrics, setMetrics] = useState({});
+
+  const initialStatus = new URLSearchParams(location.search).get("status") || "All";
+  const [filters, setFilters] = useState({ city: "All", status: initialStatus, search: "" });
   const pageSize = 20;
 
   useEffect(() => {
     fetchLeads();
   }, [page, filters.city, filters.status]);
+
+  useEffect(() => {
+    fetchMetrics();
+  }, []);
 
   async function fetchLeads() {
     setLoading(true);
@@ -69,9 +78,30 @@ export default function Leads() {
     }
   }
 
+  async function fetchMetrics() {
+    try {
+      const res = await fetch(`${API_BASE}/dashboard/metrics`);
+      if (res.ok) setMetrics(await res.json());
+    } catch {}
+  }
+
   function handleFilterChange(key, value) {
     setFilters(prev => ({ ...prev, [key]: value }));
     setPage(0);
+  }
+
+  async function updateLeadStatus(leadId, status) {
+    try {
+      await fetch(`${API_BASE}/leads/${leadId}/status`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ status })
+      });
+      fetchLeads();
+      fetchMetrics();
+    } catch (err) {
+      console.error("Failed to update status:", err);
+    }
   }
 
   return (
@@ -126,6 +156,8 @@ export default function Leads() {
         </div>
       </div>
 
+      <FunnelBar metrics={metrics} />
+
       {/* Leads Table */}
       <div className="card overflow-hidden">
         <div className="overflow-x-auto">
@@ -155,7 +187,7 @@ export default function Leads() {
                 </tr>
               ) : (
                 leads.map((lead) => (
-                  <tr key={lead.LeadID} className="border-b border-slate-700/50 hover:bg-slate-700/30">
+                  <tr key={lead.LeadID} className={`border-b border-slate-700/50 hover:bg-slate-700/30 ${lead.Status === "CLOSED" ? "opacity-60" : ""}`}>
                     <td className="p-3">
                       <div>
                         <p className="font-medium text-white">{lead.BusinessName}</p>
@@ -211,12 +243,38 @@ export default function Leads() {
                       <StatusBadge status={lead.Status} />
                     </td>
                     <td className="p-3 text-center">
-                      <Link 
-                        to={`/leads/${lead.LeadID}`}
-                        className="btn-primary text-sm py-1 px-3"
-                      >
-                        View
-                      </Link>
+                      <div className="flex items-center justify-center gap-2">
+                        {lead.Status === "PRIORITY" && (
+                          <Link
+                            to="/outreach"
+                            className="text-xs bg-blue-600 hover:bg-blue-500 text-white px-3 py-1.5 rounded-lg font-medium transition-colors whitespace-nowrap"
+                          >
+                            Send Outreach →
+                          </Link>
+                        )}
+                        {(lead.Status === "CONTACTED" || lead.Status === "RESPONDED") && (
+                          <button
+                            onClick={() => updateLeadStatus(lead.LeadID, "INTERESTED")}
+                            className="text-xs bg-purple-600 hover:bg-purple-500 text-white px-3 py-1.5 rounded-lg font-medium transition-colors whitespace-nowrap"
+                          >
+                            Mark Interested →
+                          </button>
+                        )}
+                        {lead.Status === "INTERESTED" && (
+                          <button
+                            onClick={() => updateLeadStatus(lead.LeadID, "CLOSED")}
+                            className="text-xs bg-green-600 hover:bg-green-500 text-white px-3 py-1.5 rounded-lg font-medium transition-colors whitespace-nowrap"
+                          >
+                            Close Deal →
+                          </button>
+                        )}
+                        <Link
+                          to={`/leads/${lead.LeadID}`}
+                          className="btn-primary text-sm py-1 px-3"
+                        >
+                          View
+                        </Link>
+                      </div>
                     </td>
                   </tr>
                 ))
